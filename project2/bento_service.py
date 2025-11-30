@@ -39,7 +39,6 @@ class MNISTClassifierService:
     )
     _MEAN = 0.1307
     _STD = 0.3081
-    _logger = logging.getLogger(__name__)
 
     def __init__(self) -> None:
         self._device = self._select_device()
