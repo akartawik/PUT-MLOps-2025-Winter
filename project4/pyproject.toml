@@ -1,0 +1,22 @@
+[project]
+name = "project4"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.35.0",
+    "pydantic-settings>=2.12.0",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "docker>=7.0.0",
+]
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "ml_app"
